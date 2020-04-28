@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management system</title>
+  <!-- <link rel="icon" href="./libimg/lib1.jpeg"> -->
+  <link rel="icon" href="./libimg/lib1.jpeg">
+  <!-- Including Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Linking the files -->
+  <link rel="stylesheet" href="./libcss/libhome.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light "style="background-color:blue">
+    <a class="navbar-brand" href="#">
+      <img src="./libimg/lib1.jpeg" width="50px" height="40px" alt="">
+    </a>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <a class="navbar-brand" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="book.html"><i class="fa fa-book" aria-hidden="true"></i> BOOK <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="author.html"><i class="fa fa-users" aria-hidden="true"></i> AUTHOR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> CONTACT</a>
+      </li>
+    </ul>
+    <!-- <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+       <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></span> LOG IN</a>      
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="signup.html"><i class="fa fa-user-plus" aria-hidden="true"></i>SIGN UP</a>
+       </li>
+      </li>    
+    </ul> -->
+  </div>
+</nav>
+
+<nav class="navbar navbar-light  justify-content-between" style="background-color:rgba(83, 7, 30, 0.185)">
+  <!-- <a class="navbar-brand"><span >Library Management System</span></a> -->
+  <strong>Library Management System</strong>
+  <form class="form-inline"> 
+    <input class="form-control mr-sm-2" type="search" placeholder="Search Book/Author" aria-label="Search" required>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+    <i class="fa fa-search"></i> </button>
+  </form>
+</nav>
+
+
+<div class="container"id="container1">
+  <br>
+  <h3><span style="text-align:right" >Welcome to Library Management System</span></h3>
+<div class="row justify-content-center" id="row1" > 
+    <div class="col-md-4">
+        <div class="card shadow" style="width: 20rem; ">
+            <div class="inner">
+            <h5> Author</h5>
+                <img src="./libimg/author.jpg" class="card-img-top" style=" height:250px" alt="...">
+            </div>                         
+            <div class="card-body">
+                <p class="card-text">
+                  Author section list out books based on its authors.different books of same authors can be found here. 
+                </p>
+              <a href="author.html" >Explore Author Section</a> 
+            </div>
+        </div>
+    </div>
+                  
+    <div class="col-md-4">
+        <div class="card shadow" style="width: 20rem;">
+            <div class="inner">
+            <h5>Book</h5>
+                <img src="./libimg/book.jpg" class="card-img-top" style=" height:250px" alt="...">
+            </div>                         
+            <div class="card-body">
+                <p class="card-text">
+                  This section deals with different kids of books like Kids book , Biographies ,Fiction ,Non-Fiction etc. 
+                </p>
+              <a href="book.html" >Explore Book Section</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow" style="width: 20rem; ">
+            <div class="inner">
+            <h5>Registration</h5>
+                <img src="./libimg/regislerlog.jpg" class="card-img-top" style=" height:250px" alt="...">
+            </div>                         
+            <div class="card-body">
+                <p class="card-text">
+                  Register with username and password to access all the features.
+                .</p>
+              <a href="signup.html" >For another Registration</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+
+<div class="container" id="container2">
+  <h3>Most Popular Books</h3>
+  <br>
+  <div class="row justify-content-end">
+      <div class="col-md-3" >
+        <a href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland">  <img src="./libimg/kid1.jpg" class="img-thumbnail"></a>
+      </div>
+      <div class="col-md-3"><a href="https://en.wikipedia.org/wiki/Macbeth">
+        <img src="./libimg/shake1.jpg"class="img-thumbnail"></a>
+      </div>
+      <div class="col-md-3"><a href="https://en.wikipedia.org/wiki/Harry_Potter">
+          <img src="./libimg/kid3.jpeg"class="img-thumbnail"></a>
+      </div>
+      <div class="col-md-3"><a href="https://en.wikipedia.org/wiki/Ignited_Minds">
+        <img src="./libimg/apj2.jpg"class="img-thumbnail"></a>
+      </div>        
+  </div>
+</div>     
+      
+     <!-- <script src="script1.js"></script>  -->
+</body>
+<footer>
+  <p style="text-align:center"> 
+      Email:&nbsp librarymgmt@gmail.com<br>
+      mobile:&nbsp 9876543210
+  </p>
+</footer>
+
+</html> 

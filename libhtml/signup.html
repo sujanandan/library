@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="icon" href="./libimg/lib1.jpeg">
+  <!-- Including Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Linking the files -->
+  <link rel="stylesheet" href="./libcss/libr.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light "style="background-color:blue">
+    <a class="navbar-brand" href="#">
+      <img src="./libimg/lib1.jpeg" width="50px" height="40px" alt="">
+    </a>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <strong>Library Management System</strong>
+    <!-- <a class="navbar-brand" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="book.html"><i class="fa fa-book" aria-hidden="true"></i> BOOK <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="author.html"><i class="fa fa-users" aria-hidden="true"></i> AUTHOR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> CONTACT</a>
+      </li>
+    </ul> -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+       <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></span> LOG IN</a>      
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="signup.html"><i class="fa fa-user-plus" aria-hidden="true"></i>SIGN UP</a>
+       </li>
+      </li>    
+    </ul>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-light  justify-content-between" style="background-color:rgba(83, 7, 30, 0.185)">
+  
+  <form class="form-inline"> 
+    <input class="form-control mr-sm-2" type="search" placeholder="Search Book/Author" aria-label="Search" required>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+    <i class="fa fa-search"></i> </button>
+  </form>
+</nav> -->
+<div id="main"> 
+	
+  <form  action="home.html"  onsubmit="return validate()">
+        <!-- <div class="container-log"> -->
+          <h1>Registration</h1>
+          <label for="uname"><b>User name</b></label>
+          <input type="text" placeholder="Enter User name" id="uname" >
+          <span id="uspan" class="text-danger font-weight-bold"></span><br>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" id="email" >
+          <span id="espan" class="text-danger font-weight-bold"></span><br>
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="psw" >
+          <span id="pspan" class="text-danger font-weight-bold"></span><br>
+      
+          <label for="psw1"><b>Re-enter Password</b></label>
+          <input type="password" placeholder="Re-enter Password" id="psw1" >  
+          <span id="rspan" class="text-danger font-weight-bold"></span><br> 
+         
+          
+          <button type="submit" class="registerbtn">Register</button>
+         <p>Already have an account? <a href="login.html">Log in</a></p>
+        <!-- </div> --> 
+      </form>
+      </div>
+<script src="./libjs/vali.js"></script> 
+</body>
+<footer>
+  <p style="text-align:center"> 
+      Email:&nbsp librarymgmt@gmail.com<br>
+      mobile:&nbsp 9876543210
+  </p>
+</footer>
+
+</html> 
+
+       
+    
